@@ -1,0 +1,13 @@
+mixin img(src, alt)
+  - if (typeof(alt) === 'undefined') alt = ''
+  - if (typeof(src) === 'undefined') src = 'images/transparent.png'
+  img(src="#{src}", alt="#{alt}")&attributes(attributes)
+
+mixin link(link)
+  - if (typeof(link.href) === 'undefined') link.href = '#'
+  - if (typeof(link.title) === 'undefined') link.title = link.text
+  a(href=link.href, title=link.title)&attributes(attributes)
+    if block
+      block
+    else
+      !=link.text

@@ -1,0 +1,111 @@
+include mixins
+doctype html
+html(lang="en")
+  head
+    title Web Masters Group
+    link(rel="stylesheet", type="text/css", href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700&subset=vietnamese")
+    link(rel="stylesheet", type="text/css", href="css/app.css")
+    script(src="js/libs/libs.js")
+    //- script(src="js/libs/libs.min.js")
+    script(src="js/app.js")
+    //- script(src="js/app.min.js")
+  body
+    nav.navbar.navbar-default.navbar-fixed-top(data-padding="true")
+      .container
+        .navbar-header
+          button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#navbar", aria-expanded="false", aria-controls="navbar")
+            span.sr-only 
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href="#", title="Web Masters Group")
+            +img("images/web-masters-group.png", "Web Masters Group")
+        #navbar.navbar-collapse.collapse
+          ul.nav.navbar-nav.navbar-right
+            li.active
+              a(href="#", data-srroll="#about-team") About Team
+            li
+              a(href="#", data-srroll="#skill") Skill
+            li
+              a(href="#", data-srroll="#contact") Contact Us
+    section.about-team
+      .inner
+        .container
+          .jumbotron
+            h1.main-title
+              | We're
+              span Web Masters Group
+            p
+              | This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.
+            p To see the difference between static and fixed top navbars, just scroll.
+    section#about-team.details-infomation
+      .main-carousel(data-carousel="true")
+        block item
+          .item.global-padding
+            .container
+              .row
+                .col-sm-12.col-md-4
+                  .person-about
+                    h2.second-title My Story
+                    ul
+                      li Frontend dev with 3 years’ experience. 
+                      li Strong HTML & CSS skills including CSS3 & HTML5.
+                      li Have firm experience in cutting HTML/CSS from PSD files using Photoshop, Sublime text..
+                      li Responsive web design.
+                      li HTML Email template best practice.
+                      li Good knowledge in Javascript.
+                      li Experience working with jQuery and a number of jQuery plug-ins.
+                      li Excellent at communication, teamwork and can work under high pressure.
+                    .text-center
+                      a.btn.btn-primary(href="data/luongtronghien.pdf" title="Download Resume" download) Download Resume
+                .col-sm-6.col-md-4
+                  .text-center
+                    img.img-responsive.img-thumbnail(alt="Luong Trong Hien", src="http://placehold.it/350x350")
+                .col-sm-6.col-md-4
+                  .person-info
+                    h2.second-title Personal Information
+                    table.table
+                      tr
+                        td Name:
+                        td Luong Trong Hien
+                      tr
+                        td Age:
+                        td 27 Years
+                      tr
+                        td Phone:
+                        td +84974250568
+                      tr
+                        td Email:
+                        td <a href="mailto:luongtronghien2106@gmail.com" title="luongtronghien2106@gmail.com">luongtronghien2106@gmail.com</a>
+                      tr
+                        td Address:
+                        td Ho Chi Minh City, VietNam
+        block item
+        block item
+        block item
+    section#skill.skill-block.global-padding
+      .container
+        .row
+          .col-xs-12
+            h2.second-title Skill
+            .desc
+              p This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device. This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.
+              p This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device. This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.
+              p This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device. This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.
+              p This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device. This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.
+              p This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device. This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.
+              p This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device. This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.
+              p This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device. This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.
+    section#contact.contact-block.global-padding
+      .container
+        .row
+          .col-xs-12
+            h2.second-title Contact Us
+            .desc
+              p This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device. This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.
+              p This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device. This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.
+              p This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device. This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.
+              p This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device. This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.
+              p This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device. This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.
+              p This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device. This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.
+              p This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device. This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.

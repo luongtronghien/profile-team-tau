@@ -1,0 +1,149 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 78px;
+}
+
+.slick-slide img {display: inline-block;}
+.navbar {
+  box-shadow: rgba(0, 0, 0, 0.34902) 0px 1px 6px;
+}
+.navbar-nav {
+  text-transform: uppercase;
+  font-weight: 500;
+  li {
+    a {
+      border: 6px solid transparent;
+    }
+    &.active a {
+      border-bottom-color: #00bcd4;
+    }
+  }
+}
+.navbar-fixed-top {border: 0;}
+
+.navbar-brand {
+  height: auto;
+}
+
+.about-team {
+  display: table;
+  height: calc(100vh - 78px);
+  width: 100%;
+  position: relative;
+  background: url("../images/bgd-about-team.jpg") no-repeat fixed center center / cover;
+  color: white;
+  text-align: center;
+  > .inner {
+    background-color: rgba(0,0,0, .6);
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.main-title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  > span {
+    padding-left: 15px;
+    color: #00bcd4;
+  }
+}
+
+.second-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #00bcd4;
+  font-size: 2.4rem;
+}
+
+.details-infomation ul li {
+  color: #727272;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+}
+
+.details-infomation ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.slick-dots li button:before {background-color: #00bcd4;}
+
+.navbar-header img {max-width: 100%;}
+
+.main-carousel .item {outline: 0;}
+.slick-dots li button:before {font-size: 0;}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .navbar-header {
+    width: 45%;
+  }
+  .navbar .container {
+    display: flex;
+    align-items: center;
+  }
+  #navbar {
+    width: 55%;
+  }
+}
+
+@media (max-width: 991px){
+  .person-about {
+    margin-bottom: 30px;
+  }
+  .person-info {
+    overflow: hidden;
+    margin-top: 30px;
+    .table a {
+      word-break: break-all;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+  .main-title {
+    font-size: 7.2rem;
+  }
+  .global-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-title {
+    font-size: 4rem;
+  }
+  .navbar-brand {
+    width: calc(100% - 60px);
+  }
+  .navbar-header {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .navbar-nav {
+    margin: 0;
+    li {
+      + li {border-top: 1px solid #e7e7e7;}
+      a {
+        border: 0;
+      }
+    }
+  }
+  .global-padding {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
